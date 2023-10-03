@@ -1,8 +1,8 @@
 /*Tipografía-Estilos generales*/
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600;900&family=PT+Sans&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,700&family=Quicksand:wght@300;400&display=swap'); */
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600;900&family=PT+Sans&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,700&family=Quicksand:wght@300;400&display=swap'); */
 @font-face {
     font-family: 'ArchitypeRenner-Regular'; /* Nombre que asignas a la fuente */
-    src: url('/css/fonts/ArchitypeRenner-Regular.otf') format('opentype'); /* Ruta al archivo de la fuente */
+    src: url('/Frontend_2/css/fonts/ArchitypeRenner-Regular.otf') format('open type'); /* Ruta al archivo de la fuente */
   }
 
 *{
@@ -25,7 +25,7 @@ header{
     justify-content: flex-start;
     align-items: center;
     border-bottom:solid 1px #777777; 
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 header img{
@@ -35,9 +35,10 @@ header img{
 
 header P{
     font-family: 'ArchitypeRenner-Regular', sans-serif;
-    font-size: 22px;
-    margin-left: 25%;
-    color: rgb(215, 8, 8);
+    font-size: 18px;   
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
 }
 
 header nav{
@@ -57,8 +58,8 @@ header nav ul li{
 header nav ul li a{
     text-decoration: none;
     margin:25px;
-    color:#303030;
-    font-size: 15px;
+    color:#000000;
+    font-size: 12px;
     text-transform: uppercase;
 }
 header nav ul li a:hover{
