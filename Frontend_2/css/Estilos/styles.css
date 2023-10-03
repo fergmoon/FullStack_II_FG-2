@@ -21,11 +21,11 @@ header{
     width: 100%;
     height: 90px;
     position: relative;
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: inline-flex; 
+    justify-content:flex-start;
+    align-items: center;    
     border-bottom:solid 1px #777777; 
-    /* background-color: aqua; */
+    background-color: aqua; 
 }
 
 header img{
@@ -35,10 +35,10 @@ header img{
 
 header P{
     font-family: 'ArchitypeRenner-Regular', sans-serif;
-    font-size: 18px;   
+    font-size: 18px;  
+    margin-left: 450px;
     color: rgb(0, 0, 0);
-    align-items: center;
-    justify-content: center;
+
 }
 
 header nav{
@@ -219,4 +219,7 @@ header nav ul .lupa i{
         flex: 100%;
         max-width: 100%;
     }
+}
+elemento {
+	font-family: futura-lt-w01-book,sans-serif;
 }
