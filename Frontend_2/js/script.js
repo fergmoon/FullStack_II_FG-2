@@ -21,3 +21,29 @@ class headermain extends HTMLElement{
 }
 
 window.customElements.define("menu-main", headermain);
+
+/* ======= NAVEGACION ============ */
+
+document.addEventListener('DOMContentLoaded', function() {
+    var previousButton = document.getElementById('previous');
+    var nextButton = document.getElementById('next');
+
+    previousButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = 'proyecto012.html';
+    });
+
+    nextButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = 'proyecto002.html';
+    });
+});
+/*=======OBTENER PAGINA ANTERIOR======== */
+document.addEventListener('DOMContentLoaded', function() {
+    var paginaAnterior = document.referrer;
+    if (paginaAnterior) {
+        console.log('Página anterior:', paginaAnterior);
+    } else {
+        console.log('No hay página anterior');
+    }
+});
