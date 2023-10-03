@@ -72,5 +72,88 @@ menu-main nav ul li a{
 
 menu-main nav ul li a:hover{
     color:#919191;
+}
 
+/*Estilos Main-Container*/
+
+.galeria{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    /* background-color: aqua; */
+}
+
+.columna{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.columna img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all .3s ease;
+}
+
+.columna img:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+    box-shadow:  0 0 10px rgba(0, 0, 0, .5);
+    transform: scale(1.1);
+}
+
+.overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay .slideshow{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, .9);
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.slideshow img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;    
+}
+
+footer{
+    right: 0px ;
+    left: initial;
+    width: auto;
+    margin-right: 20px;
+    border-radius: 50px;
+    background-color: #1d1d1dca;
+}
+footer i{
+    color: white;
+    font-size: 28px;
+    padding: 15px 32px;
+    transition: all 1s;
+}
+footer i:hover{
+    color: #000000;
+    font-size: 30px;
+    transition: all 1s;
 }
