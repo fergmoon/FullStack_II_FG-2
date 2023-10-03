@@ -1,225 +1,76 @@
 /*Tipografía-Estilos generales*/
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600;900&family=PT+Sans&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,700&family=Quicksand:wght@300;400&display=swap'); */
-@font-face {
-    font-family: 'ArchitypeRenner-Regular'; /* Nombre que asignas a la fuente */
-    src: url('/Frontend_2/css/fonts/ArchitypeRenner-Regular.otf') format('open type'); /* Ruta al archivo de la fuente */
-  }
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@200;400&family=Gruppo&display=swap');
+
 
 *{
-   border: 0;
-   margin:0;
-   padding:0;
-   box-sizing: border-box;
-   font-family: 'ArchitypeRenner-Regular', sans-serif; 
+    border: 0;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gruppo', sans-serif;
 }
 
-body{
-    font-family: 'ArchitypeRenner-Regular', sans-serif;
-}
-
-header{
+#main-contain{
     width: 100%;
-    height: 90px;
+    height: 100px;
     position: relative;
-    display: inline-flex; 
-    justify-content:flex-start;
-    align-items: center;    
-    border-bottom:solid 1px #777777; 
-    background-color: aqua; 
+    display: inline-flex;
+    justify-content: flex-start;
+    /* border-bottom:solid 1px #777777;  */
+    /* background-color: aqua; */
+    justify-content: center;
 }
 
-header img{
-    height: 70%;
-    margin-left: 80px;
+.menu{
+    display: flex;
+    width: 20%;
+    height: auto;
+    justify-content: center;
+    /* background-color: #919191; */
 }
 
-header P{
-    font-family: 'ArchitypeRenner-Regular', sans-serif;
-    font-size: 18px;  
-    margin-left: 450px;
-    color: rgb(0, 0, 0);
+menu-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:45px; 
+}
+
+menu-main p{
+    font-size: 25px;
+    font-weight: 700;
+    /* background-color: rgba(137, 43, 226, 0.378); */
 
 }
 
-header nav{
-    position:absolute;
-    right: 0;
+menu-main nav{
+    margin-top: 25px;
+    width: 100%;
+    /* background-color: rgba(0, 126, 19, 0.442); */
 }
 
-header nav ul{
-    display:inline-flex;
+menu-main nav ul{
+    display:flex;
+    list-style: none;
+    /* background-color: rgba(165, 42, 42, 0.382); */
 }
 
-header nav ul li{
+menu-mainer nav ul li{
     list-style:none;
-    position: relative;
+
 }
 
-header nav ul li a{
+menu-main nav ul li a{
     text-decoration: none;
-    margin:25px;
-    color:#000000;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-header nav ul li a:hover{
-    color:#949494;
-
-}
-
-header nav ul .lupa{
-    border-left:solid 2px #303030;
-}
-
-header nav ul .lupa i{
+    margin:35px; /*textos menu separados*/
     color:#303030;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
-/*Estilos Main-Container*/
+menu-main nav ul li a:hover{
+    color:#919191;
 
-.galeria{
-    width: 90%;
-    margin-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px 20px;
-}
-
-.columna{
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.columna img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    filter: grayscale(100%);
-    transition: all .3s ease;
-}
-
-.columna img:hover{
-    cursor: pointer;
-    filter: grayscale(0%);
-    box-shadow:  0 0 10px rgba(0, 0, 0, .5);
-    transform: scale(1.1);
-}
-
-.overlay{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .7s ease;
-    visibility: hidden;
-    opacity: 0;
-}
-.overlay .slideshow{
-    width: 90%;
-    height: 90%;
-    background-color: rgba(255, 255, 255, .9);
-    color: black;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.slideshow img{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;    
-}
-
-.btn_cerrar{
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    font-size: 32px;
-    background-color: rgba(0, 0, 0, .7);
-    color: #fff;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    transition: all .2s ease;    
-}
-
-.btn_cerrar:hover{
-    transform: scale(1.2);
-    cursor: pointer;    
-}
-
-.botones{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 70px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: rgb(240, 106, 45);
-}
-
-.botones:hover > i{
-    transform: scale(1.1);
-    transition: all .2s ease;    
-} 
-
-.atras {
-    left:20px;
-}
-
-.adelante {
-    right: 20px;
-}
-
-.mdi {
-    pointer-events: none; /* evita que el icono sea clickeable al acceder a él con el js */
-}
-
-/*@media querys para el responsive*/
-
-@media screen and (max-width: 800px) {
-    .columna{
-        flex:50%;
-        max-width: 50%;
-    }
-
-    botones{
-        font-size: 55px;
-    }
-    .atras{
-        left: 5px;
-    }
-    .adelante{
-        right: 5px;
-    }
-    .slideshow img{
-        width: 98%;
-    }
-}
-
-@media screen and (max-width: 600px) {   /*celulares pequeños imagenes una sobre otra*/
-    .columna{
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-elemento {
-	font-family: futura-lt-w01-book,sans-serif;
 }
