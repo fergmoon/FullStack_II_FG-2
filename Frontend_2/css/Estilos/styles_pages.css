@@ -172,10 +172,10 @@ menu-main nav ul li a:hover{
 }
 
 .description{
-    width: 90%;
+    width: 80%;
     height: auto;
-    margin-left: 5%;
-    margin-top: 5%;
+    margin-left: 10%;
+    margin-top: 1%;
     /* background-color: chartreuse;   */
     padding: 2%; 
 }
@@ -189,8 +189,8 @@ menu-main nav ul li a:hover{
 }
 
 .technical{
-    width: 84%;
-    margin-left: 8%;
+    width: 80%;
+    margin-left: 10%;
     height: auto;    
     margin-top: 5%;
     text-align: justify;
@@ -218,5 +218,6 @@ footer {
     align-self: center;
     margin-bottom: 0;
     padding: 3%;
+    font-weight: 400;
     /* background-color: #191919ca; */
 }
