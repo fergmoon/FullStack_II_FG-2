@@ -16,10 +16,11 @@
     height: 100px;
     position: relative;
     display: inline-flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     /* border-bottom:solid 1px #777777;  */
     /* background-color: aqua; */
-    justify-content: center;
+    
 }
 
 .menu{
@@ -77,36 +78,39 @@ menu-main nav ul li a:hover{
 
 /*Estilos Main-Container*/
 
-.galeria{
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 20px;
-    /* background-color: aqua; */
+.galeria_pages{
+    width: 32%;
+    margin-left: 34%;
+    height: 2000px;   
+    position: absolute; 
+    margin-top: 2.5%; 
+    align-items: center;
+    background-color: rgba(255, 0, 238, 0.212);
 }
 
 .columna{
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    width: 90%;
+    height: auto;    
+    margin-left: 5%;
+    margin-top: 4%; /*separacion */
+    background-color: bisque;
+
 }
 
-.columna img {
-    margin-top: 8px;
-    vertical-align: middle;
+.columna img { 
     width: 100%;
-    filter: grayscale(100%);
-    transition: all .3s ease;
+    height: auto;
+    margin: 5px 0;
+    align-items: center;
+    justify-content: center;
 }
 
-.columna img:hover{
+/* .columna img:hover{
     cursor: pointer;
     filter: grayscale(0%);
     box-shadow:  0 0 10px rgba(0, 0, 0, .5);
     transform: scale(1.1);
-}
+} */
 
 .overlay{
     position: fixed;
