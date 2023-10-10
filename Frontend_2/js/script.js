@@ -5,9 +5,12 @@ class headermain extends HTMLElement{
 
     connectedCallback(){
         this.innerHTML = `
-        <p>FERNANDO GOMEZ</p>
+        <h2>FERNANDO GOMEZ</h2>
         <nav>
             <ul>
+                <li>
+                    <a href="home.html">home</a>
+                </li>            
                 <li>
                     <a href="work.html">Work</a>
                 </li>

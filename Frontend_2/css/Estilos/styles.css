@@ -13,13 +13,12 @@
 
 #main-contain{
     width: 100%;
-    height: 100px;
+    height: 90px;
     position: relative;
     display: inline-flex;
-    justify-content: flex-start;
-    /* border-bottom:solid 1px #777777;  */
-    /* background-color: aqua; */
     justify-content: center;
+    /* background-color: aqua; */
+
 }
 
 .menu{
@@ -33,13 +32,15 @@
 menu-main{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top:45px; 
+    justify-content: center;
+    text-align: center;
 }
 
-menu-main p{
-    font-size: 25px;
-    font-weight: 700;
+menu-main h2{
+    font-size: 22px;
+    font-weight: 800;
+    padding: 5px;
+    margin-top: 25px;
     /* background-color: rgba(137, 43, 226, 0.378); */
 
 }
@@ -105,7 +106,7 @@ menu-main nav ul li a:hover{
     cursor: pointer;
     filter: grayscale(0%);
     box-shadow:  0 0 10px rgba(0, 0, 0, .5);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .overlay{
