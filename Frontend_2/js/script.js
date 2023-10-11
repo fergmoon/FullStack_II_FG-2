@@ -8,11 +8,25 @@ class headermain extends HTMLElement{
         <h2>FERNANDO GOMEZ</h2>
         <nav>
             <ul>
-                <li>
+                <li>                
                     <a href="home.html">home</a>
                 </li>            
-                <li>
-                    <a href="work.html">Work</a>
+                <li id="dropdown" class="dropdown">
+                    <a class="dropbtn" href="work.html">Work</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                        <a href="#">Link 4</a>
+                        <a href="#">Link 5</a>
+                        <a href="#">Link 6</a>
+                        <a href="#">Link 7</a>
+                        <a href="#">Link 8</a>
+                        <a href="#">Link 9</a>
+                        <a href="#">Link 10</a>
+                        <a href="#">Link 11</a>
+                        <a href="#">Link 12</a>
+                    </div>                    
                 </li>
                 <li>
                     <a href="about.html">About</a>

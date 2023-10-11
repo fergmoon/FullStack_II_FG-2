@@ -204,3 +204,54 @@ footer i:hover{
 
     
 }
+
+ /* Dropdown Button Work */
+ .dropbtn {
+    /* background-color: #04AA6D; */
+    color: #303030;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display:none;
+    position: absolute;   
+    width: 200%; 
+    background-color: #35353598; /*color fondo del drop menu*/  
+    margin-left: -50%;   
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    /* background-color: aqua; */
+    width: 100%;
+    margin:0;
+    padding: 6px 0;  /*separación textos drop menu*/    
+    font-size: 13px;
+    color: rgb(239, 239, 239);
+    text-decoration: none;
+    display: block;
+
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* .dropdown:hover .dropbtn {background-color: #bbbbbb;}  */
