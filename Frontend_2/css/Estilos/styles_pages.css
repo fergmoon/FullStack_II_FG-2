@@ -36,7 +36,6 @@ menu-main{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    /* margin-top:45px;  */
 }
 
 menu-main h2{
@@ -49,7 +48,6 @@ menu-main h2{
 }
 
 menu-main nav{
-
     margin-top: 25px;
     width: 100%;
     /* background-color: rgba(0, 126, 19, 0.442); */
@@ -120,6 +118,7 @@ menu-main nav ul li a:hover{
     width: 350px;    
 }
 
+/*============Estilos Main-Contain Paginas==============*/
 .galeria_pages{
     width: 32%;
     margin-left: 34%;
