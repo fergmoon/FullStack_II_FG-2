@@ -5,27 +5,27 @@ class headermain extends HTMLElement{
 
     connectedCallback(){
         this.innerHTML = `
-        <h2>FERNANDO GOMEZ</h2>
+        <h1>FERNANDO GOMEZ</h1>
         <nav>
             <ul>
                 <li>                
                     <a href="index.html">home</a>
                 </li>            
                 <li id="dropdown" class="dropdown">
-                    <a class="dropbtn" href="work.html">Work</a>
+                    <a class="dropbtn" href="fun.html">Fun</a>
                     <div class="dropdown-content">
-                        <a href="proyecto001.html">Vitrina Punto de Venta</a>
-                        <a href="proyecto002.html">Iluminación Navideña</a>
-                        <a href="proyecto003.html">Mobiliario Hogar 01</a>
-                        <a href="proyecto004.html">Estantes Cocina</a>
-                        <a href="proyecto005.html">Punto de Venta Itinerante 01</a>
-                        <a href="proyecto006.html">Proyectos especiales 01</a>
-                        <a href="proyecto007.html">Escritorio Pequeño</a>
-                        <a href="proyecto008.html">Punto de venta Itinerante 02</a>
-                        <a href="proyecto009.html">Exhibición Comercial</a>
-                        <a href="proyecto010.html">Exhibidor Móvil</a>
-                        <a href="proyecto011.html">Mobiliario Hogar 02</a>
-                        <a href="proyecto012.html">Proyectos Especiales 02</a>
+                        <a href="proyecto001.html">Showcase</a>
+                        <a href="proyecto002.html">lighting and decoration</a>
+                        <a href="proyecto003.html">Furnishing 1</a>
+                        <a href="proyecto004.html">Furnishing 2</a>
+                        <a href="proyecto005.html">Mobile POS 01</a>
+                        <a href="proyecto006.html">Special projects 1</a>
+                        <a href="proyecto007.html">Furnishing 3</a>
+                        <a href="proyecto008.html">Mobile POS 2</a>
+                        <a href="proyecto009.html">Comercial Stores</a>
+                        <a href="proyecto010.html">Mobile Exhibitions</a>
+                        <a href="proyecto011.html">Furnishing 4</a>
+                        <a href="proyecto012.html">Special projects 2</a>
 
                     </div>                    
                 </li>

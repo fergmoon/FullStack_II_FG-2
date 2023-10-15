@@ -1,7 +1,6 @@
 /*Tipografía-Estilos generales*/
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@200;400&family=Gruppo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@200;400&family=Gruppo&family=Work+Sans:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@200;400&family=Gruppo&family=Montserrat:wght@100;200;400;800&family=Work+Sans:wght@100;200;300&display=swap');
 
 *{
     border: 0;
@@ -9,7 +8,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Gruppo', sans-serif;
-    background-color: #9B968E;
+    background-color:#9B968E;
 }
 
 #main-contain{
@@ -36,7 +35,7 @@ menu-main{
     text-align: center;
 }
 
-menu-main h2{
+menu-main h1{
     font-size: 22px;
     font-weight: 800;
     padding: 5px;
@@ -106,30 +105,34 @@ menu-main nav ul li a:hover{
 /*============Estilos Main-Contain Paginas==============*/
 
 .galeria{
-    width: 90%;
-    height: 700px;
-    margin-left: 5%;
-    margin-top: 5px;
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px 20px;
+    width: 76%;
+    height: auto;
+    margin: 1% 12%;
+    padding: 5px;
     /* background-color: rgba(255, 0, 247, 0.124); */
 }
 
 .columna{
     flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    padding: 1px 0;   
+    background-color: #695c3521;
+
     
-    background-color: rgb(255, 255, 255);
+}
+.columna a{
+    align-items: center;
+    background-color: #00000000;
 }
 
 .columna img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+    width: 98%;    
+    margin: 1%;
+    padding: 2px;
+    background-color: #6063472c;
     filter: grayscale(100%);
     transition: all .3s ease;
+
 }
 
 .columna img:hover{
@@ -137,58 +140,43 @@ menu-main nav ul li a:hover{
     filter: grayscale(0%);
     box-shadow:  0 0 10px rgba(0, 0, 0, .5);
     transform: scale(1.05);
+    background-color: rgb(255, 255, 255);
 }
 
-.overlay{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .7s ease;
-    visibility: hidden;
-    opacity: 0;
-}
-.overlay .slideshow{
-    width: 90%;
-    height: 90%;
-    background-color: rgba(255, 255, 255, .9);
-    color: black;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.slideshow img{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;    
-}
-
+/*===========FOOTER  SOCIAL - MEDIA  *BEGINS*============*/
 footer{
-    right: 0px ;
-    left: initial;
-    width: auto;
-    margin-right: 20px;
-    border-radius: 50px;
-    background-color: #1d1d1dca;
+    display: flex;
+    width: 25%;
+    height: 25%;
+    position:relative;
+    /* bottom: 1%; */
+    left: 37%;  
+    justify-content: center;  
+
+    /* background-color: #ff0000; */
+
+
+    
 }
 footer i{
-    color: white;
-    font-size: 28px;
-    padding: 15px 32px;
-    transition: all 1s;
+        
+    color: #1D1D1D;
+    font-size: 2dvw;    
+    padding: 0 8%;
+    transition: all .3s;
+    justify-content: space-around;
+    /* background-color: aqua; */
+    
+
 }
 footer i:hover{
-    color: #000000;
-    font-size: 30px;
-    transition: all 1s;
+    color: white;
+    font-size: 2.5dvw;
+    transition: all .5s;
 }
+
+
+/*===========FOOTER  SOCIAL - MEDIA  *END*============*/
 
 .title ul{
     list-style: none;
@@ -222,9 +210,8 @@ footer i:hover{
     font-size: 9px;
     padding: 2px 5px; /* Añadido un padding para dar espacio */ 
     border:1px solid #000; 
+    
 }
-
-
 
 .title ul li p {
     margin: 0; /* Añadido para quitar el margen predeterminado */
@@ -287,19 +274,99 @@ footer i:hover{
   .dropdown:hover .dropbtn {background-color: #bbbbbb;} 
 
 /*==========Estilos parallax Index===========*/
+.home{
+    background-color: #000000;
+}
 
-.parallax {
-    /* The image used */
-    background-image: url("/img/muebles-objetos.jpg");
-  
-    /* Set a specific height */
-    min-height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.home li{
+    background-color: #00000000;
+}
+
+.home li a{
+    background-color: #00000000;
+}
+
+ h2 {  /*Textos grandes*/
+    font-size: 200px; 
+    color: rgba(255, 255, 255, 0.7); 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    background-color: #000000ab;
+    width: 50%;  
   }
 
+  .section-background {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .parallax {
+    background-image: url("/img/Home/bd4eac57a4b5f88ee9fb86c241945ed5.webp"); 
+  }
 
+  .parallax h2{
+    color:rgba(255, 255, 255, 0.7); 
+    font-family:'Montserrat', sans-serif;
+    font-weight: 200;
+  }
+
+  .parallax1 {
+    background-image: url("/img/Home/01.jpg");
+  }
+  .parallax2 {
+    background-image: url("/img/Home/07.jpg");
+  }
+  .parallax3 {
+    background-image: url("/img/Home/09.jpg");
+  }
+
+  .text-bloc p {
+    width: 100%;
+    height: auto;
+    font-size: 32px;
+    text-align:center ;
+    color: rgb(253, 253, 253);
+    background-color: #000000;
+    padding: 10px;
+  }
+
+/*=====Botones Registro/Ingreso==========*/
+
+.main_btn{
+    width: 20%;
+    height: 6%;
+    position: absolute;
+    margin-top: 15%;
+    left: 15%;
+    
+    
+
+}
+
+.btn_register{
+    width: 45%; 
+    height: 80%; 
+    margin-top: 1.5%;
+    margin-left:3%;
+    font-size: 1.25dvw;
+    color:#000000;
+    background-color:white;
+    border-radius: 10px; 
+}
+
+.btn_login{
+    width: 45%; 
+    height: 80%; 
+    margin-top: 1.5%;
+    font-size: 1.25dvw;
+    color:#ffffff;
+    background-color:rgb(0, 0, 0);
+    border-radius: 10px; 
+    margin-left: 3%;   
+}
