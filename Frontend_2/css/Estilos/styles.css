@@ -145,33 +145,30 @@ menu-main nav ul li a:hover{
 
 /*===========FOOTER  SOCIAL - MEDIA  *BEGINS*============*/
 footer{
-    display: flex;
     width: 25%;
-    height: 25%;
-    position:relative;
-    /* bottom: 1%; */
-    left: 37%;  
-    justify-content: center;  
-
-    /* background-color: #ff0000; */
-
-
-    
+    left: 37%;
+    margin-left: 37.5%;
+    display: inline-flex;
+    height: 25px;
+    margin-top: -5px;
+    /* background-color: #ff0000e3;    */
 }
-footer i{
-        
+
+footer i{  
+    width: 20%;
+    margin-left: 4%;  
+    padding: 5px; 
+    text-align: center;
     color: #1D1D1D;
-    font-size: 2dvw;    
-    padding: 0 8%;
+    font-size: 20px;       
     transition: all .3s;
-    justify-content: space-around;
+    justify-content: space-around;  
     /* background-color: aqua; */
-    
-
 }
+
 footer i:hover{
     color: white;
-    font-size: 2.5dvw;
+    font-size: 25px;
     transition: all .5s;
 }
 
@@ -358,6 +355,12 @@ footer i:hover{
     color:#000000;
     background-color:white;
     border-radius: 10px; 
+}
+
+.btn_register:hover , .btn_login:hover{    
+    -webkit-box-shadow: 0px 6px 32px 1px rgba(255, 255, 255, 0.765);
+    transition: all .3s;
+
 }
 
 .btn_login{

@@ -195,12 +195,13 @@ a:visited {
 }
 
 .description p{
-    font-size: 12px;
+    font-size: 13px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-wrap:pretty ;
     text-align: justify;
     padding: 2%;
+    line-height: 15px;
 }
 
 .technical{
@@ -210,6 +211,8 @@ a:visited {
     margin-top: 5%;
     text-align: justify;
     padding: 3%;
+    line-height: 20px;
+    word-spacing: 5px;
     /* background-color: chocolate; */
 }
 
@@ -219,6 +222,10 @@ a:visited {
     color: #303030;
     font-weight: 500;
 }
+
+.description p::first-letter  {
+    font-size: 200%; /* Puedes ajustar el tamaño según tus preferencias */
+  }
 footer { 
     width: 100%;
     height: 15%;
