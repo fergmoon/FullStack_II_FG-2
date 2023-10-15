@@ -7,6 +7,20 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
   <script src="https://kit.fontawesome.com/0b9545bc74.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+
+
   <link rel="stylesheet" href="css/Estilos/styles.css">
   <script src="js/script.js" defer></script><!-- Igual que tener el script abajo  -->
   <title>Fernando_Gomez_ID</title>
@@ -29,35 +43,90 @@
     <section class="section-background parallax">
       <h2>Design</h2>
     </section>
-      <section class="text-bloc">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos eum ipsa libero ducimus necessitatibus.</p>
+    <section class="text-bloc">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos eum ipsa libero ducimus necessitatibus.</p>
 
       <section>
-      <section class="section-background parallax1">
-        <h2>Creativity</h2>
-      </section>
-        
-         <section class="text-bloc">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quisquam delectus cum consectetur molestiae, perspiciatis autem voluptates explicabo quo. Ex?</p>
-      <section>
-        
-        <section class="section-background parallax2">
-        <h2>FUN !</h2>
-      </section>
-        <section class="section-background parallax3">
-        <!-- <h2>Galaxy</h2> -->
-        <div class="main_btn">
-          <button class="btn_register">Registro</button>
-          <button class="btn_login">Ingreso</button>
-        </div>
-          
+        <section class="section-background parallax1">
+          <h2>Creativity</h2>
+        </section>
 
-      </section>
+        <section class="text-bloc">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quisquam delectus cum consectetur
+            molestiae, perspiciatis autem voluptates explicabo quo. Ex?</p>
+          <section>
+
+            <section class="section-background parallax2">
+              <h2>FUN !</h2>
+
+            </section>
+
+
+            <section class="section-background parallax3">
+              <button type="button" class="btn_register" data-bs-toggle="modal"
+                data-bs-target="#register_modal">Registro</button>
+                
+              <button class="btn_login">Ingreso</button>
+
+              <!-- Modal de Registro -->
+              <div class="modal fade" id="register_modal" tabindex="-1" aria-labelledby="register_modalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="register_modalLabel">Registro de Usuario</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="back/register.php" method="POST">
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputnombres">Nombres</label>
+                            <input type="text" class="form-control" name="names" id="inputnombres" placeholder="Digite sus nombres" required>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputapellidos">Apellidos</label>
+                            <input type="text" class="form-control" name="lastname" id="inputapellidos" placeholder="Digite sus Apellidos" required>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputfecha_nacimiento">Fecha de Nacimiento</label>
+                              <input type="date" class="form-control" name="birth" id="inputfecha_nacimiento" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputnumero_id">Número de Identificación (usuario)</label >
+                              <input type="text" class="form-control" name="id_person" id="inputnumero_id" required>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputemail">Correo Electrónico</label>
+                              <input type="email" class="form-control" name="email" id="inputemail" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputcontra">Contraseña</label>
+                              <input type="password" class="form-control" name="pass" id="inputcontra" required>
+                            </div>
+                          </div>
+                          <button name="register_btn" type="submit" class="btn_login">Registrate</button>
+                          <button type="reset" class="btn_register">Limpiar</button>
+                      </form>                    
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
 
 
 
 
   </header>
+
+
+
+
 
 </body>
 

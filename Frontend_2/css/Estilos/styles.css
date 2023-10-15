@@ -335,25 +335,14 @@ footer i:hover{
 
 /*=====Botones Registro/Ingreso==========*/
 
-.main_btn{
-    width: 20%;
-    height: 6%;
-    position: absolute;
-    margin-top: 15%;
-    left: 15%;
-    
-    
 
-}
-
-.btn_register{
-    width: 45%; 
-    height: 80%; 
+.btn_register {
+    width:130px; 
+    height: 35px; 
     margin-top: 1.5%;
-    margin-left:3%;
-    font-size: 1.25dvw;
-    color:#000000;
-    background-color:white;
+    font-size: 16px;
+    color:#ffffff;
+    background-color:rgb(0, 0, 0);
     border-radius: 10px; 
 }
 
@@ -364,12 +353,34 @@ footer i:hover{
 }
 
 .btn_login{
-    width: 45%; 
-    height: 80%; 
+    width:130px; 
+    height: 35px; 
     margin-top: 1.5%;
-    font-size: 1.25dvw;
+    font-size: 16px;
     color:#ffffff;
     background-color:rgb(0, 0, 0);
     border-radius: 10px; 
     margin-left: 3%;   
 }
+
+/*=======Estilos del Formulario========*/
+
+.modal-dialog{
+    width: 70%;
+    margin-top: 150px;
+    background-color: #ffffffc5;
+    max-width: none;
+    border-radius: 15px;
+  }
+  .modal .modal-title{
+    font-size: 30px;
+    color: #191919; /*importante*/
+    text-align: center ;
+  } 
+  .modal-header{
+    display: block;
+    text-align: center;/*importante*/
+  }
+  .modal .close{
+    margin-top: -60px;
+  }
