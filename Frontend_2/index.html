@@ -7,17 +7,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
   <script src="https://kit.fontawesome.com/0b9545bc74.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  <link rel="stylesheet" href="css/Estilos/styles.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="/js/script.js" defer></script><!-- Igual que tener el script abajo  -->
 
 
 
@@ -54,70 +56,83 @@
         <section class="text-bloc">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quisquam delectus cum consectetur
             molestiae, perspiciatis autem voluptates explicabo quo. Ex?</p>
-          <section>
 
+          <section>
             <section class="section-background parallax2">
               <h2>FUN !</h2>
-
             </section>
 
-
             <section class="section-background parallax3">
-              <button type="button" class="btn_register" data-bs-toggle="modal"
-                data-bs-target="#register_modal">Registro</button>
-                
-              <button class="btn_login">Ingreso</button>
+              <!-- BOTON REGISTRARSE  -->
+              <button class="btn_register" data-toggle="modal" data-target="#register_modal">Registrate</button>
 
-              <!-- Modal de Registro -->
-              <div class="modal fade" id="register_modal" tabindex="-1" aria-labelledby="register_modalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
+              <!-- BOTON INGRESAR  -->
+              <button class="btn_login" data-toggle="modal" data-target="#login_modal">Ingresa</button>
+
+
+              <!-- Modal de Registro-->
+              <div class="modal fade" id="register_modal" tabindex="-1" role="dialog"
+                aria-labelledby="register_modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="register_modalLabel">Registro de Usuario</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
                     <div class="modal-body">
-                      <form action="back/register.php" method="POST">
+
+                      <!-- Formulario de Registro START-->
+                      <form action="" method="POST">
                         <div class="form-row">
                           <div class="form-group col-md-6">
                             <label for="inputnombres">Nombres</label>
-                            <input type="text" class="form-control" name="names" id="inputnombres" placeholder="Digite sus nombres" required>
+                            <input type="text" class="form-control" name="names" id="inputnombres"
+                              placeholder="Digite sus nombres" required>
                           </div>
                           <div class="form-group col-md-6">
                             <label for="inputapellidos">Apellidos</label>
-                            <input type="text" class="form-control" name="lastname" id="inputapellidos" placeholder="Digite sus Apellidos" required>
+                            <input type="text" class="form-control" name="lastname" id="inputapellidos"
+                              placeholder="Digite sus Apellidos" required>
                           </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label for="inputfecha_nacimiento">Fecha de Nacimiento</label>
-                              <input type="date" class="form-control" name="birth" id="inputfecha_nacimiento" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label for="inputnumero_id">Número de Identificación (usuario)</label >
-                              <input type="text" class="form-control" name="id_person" id="inputnumero_id" required>
-                            </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputfecha_nacimiento">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" name="birth" id="inputfecha_nacimiento" required>
                           </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label for="inputemail">Correo Electrónico</label>
-                              <input type="email" class="form-control" name="email" id="inputemail" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label for="inputcontra">Contraseña</label>
-                              <input type="password" class="form-control" name="pass" id="inputcontra" required>
-                            </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputnumero_id">Número de Identificación (Usuario)</label>
+                            <input type="text" class="form-control" name="id_person" id="inputnumero_id" required>
                           </div>
-                          <button name="register_btn" type="submit" class="btn_login">Registrate</button>
-                          <button type="reset" class="btn_register">Limpiar</button>
-                      </form>                    
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputemail">Correo Electrónico</label>
+                            <input type="email" class="form-control" name="email" id="inputemail" required>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputcontra">Contraseña</label>
+                            <input type="password" class="form-control" name="pass" id="inputcontra" required>
+                          </div>
+                        </div>
+                        <button name="register_btn" type="submit" class="btn_login">Registrarse</button>
+                        <button type="reset" class="btn_register">Limpiar</button>
+                      </form>
+                      <!-- Formulario de Registro END--> ...
                     </div>
 
                   </div>
                 </div>
               </div>
+
+
             </section>
+          </section>
+
+
+
 
 
 

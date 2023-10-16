@@ -346,7 +346,7 @@ footer i:hover{
     border-radius: 10px; 
 }
 
-.btn_register:hover , .btn_login:hover{    
+.btn_register:hover , .btn_login:hover, #btn_limpiar:hover{    
     -webkit-box-shadow: 0px 6px 32px 1px rgba(255, 255, 255, 0.765);
     transition: all .3s;
 
@@ -363,23 +363,37 @@ footer i:hover{
     margin-left: 3%;   
 }
 
+#btn_limpiar{
+    width:130px; 
+    height: 35px; 
+    margin-top: 1.5%;
+    font-size: 16px;
+    color:#ffffff;
+    background-color:rgb(0, 0, 0);
+    border-radius: 10px; 
+    margin-left: 3%;   
+
+}
+
 /*=======Estilos del Formulario========*/
 
 .modal-dialog{
-    width: 70%;
+    width:50%;
     margin-top: 150px;
     background-color: #ffffffc5;
     max-width: none;
     border-radius: 15px;
   }
+  
   .modal .modal-title{
     font-size: 30px;
     color: #191919; /*importante*/
     text-align: center ;
   } 
+  
   .modal-header{
     display: block;
-    text-align: center;/*importante*/
+    text-align: center;/*importante */
   }
   .modal .close{
     margin-top: -60px;
