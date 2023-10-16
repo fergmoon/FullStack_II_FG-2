@@ -25,120 +25,109 @@
   <title>Fernando_Gomez_ID</title>
 </head>
 
+
+<header>
+  <nav>
+    <div>
+      <ul id="main-contain" class="home">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fun.html">Fun</a></li>
+        <li><a href="about.html">About</a></li>
+        <!-- <li><a href="#">Services</a></li> -->
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
 <body>
-  <header>
-    <nav>
-      <div>
-        <ul id="main-contain" class="home">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="fun.html">Fun</a></li>
-          <li><a href="about.html">About</a></li>
-          <!-- <li><a href="#">Services</a></li> -->
-        </ul>
-      </div>
-    </nav>
+  <!-- Container element -->
+  <section class="section-background parallax">
+    <h2>Design</h2>
+  </section>
+  <section class="text-bloc">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos eum ipsa libero ducimus necessitatibus.</p>
 
-    <!-- Container element -->
-    <section class="section-background parallax">
-      <h2>Design</h2>
-    </section>
-    <section class="text-bloc">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos eum ipsa libero ducimus necessitatibus.</p>
+    <section>
+      <section class="section-background parallax1">
+        <h2>Creativity</h2>
+      </section>
 
-      <section>
-        <section class="section-background parallax1">
-          <h2>Creativity</h2>
-        </section>
+      <section class="text-bloc">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quisquam delectus cum consectetur
+          molestiae, perspiciatis autem voluptates explicabo quo. Ex?</p>
 
-        <section class="text-bloc">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quisquam delectus cum consectetur
-            molestiae, perspiciatis autem voluptates explicabo quo. Ex?</p>
+        <section>
+          <section class="section-background parallax2">
+            <h2>FUN !</h2>
+          </section>
 
-          <section>
-            <section class="section-background parallax2">
-              <h2>FUN !</h2>
-            </section>
+          <section class="section-background parallax3">
+            <!-- BOTON REGISTRARSE  -->
+            <button type="button" class="btn_register" data-toggle="modal" data-target="#register_modal">Registrate</button>
 
-            <section class="section-background parallax3">
-              <!-- BOTON REGISTRARSE  -->
-              <button class="btn_register" data-toggle="modal" data-target="#register_modal">Registrate</button>
-
-              <!-- BOTON INGRESAR  -->
-              <button class="btn_login" data-toggle="modal" data-target="#login_modal">Ingresa</button>
+            <!-- BOTON INGRESAR  -->
+            <button class="btn_login" data-toggle="modal" data-target="#login_modal">Ingresa</button>
 
 
-              <!-- Modal de Registro-->
-              <div class="modal fade" id="register_modal" tabindex="-1" role="dialog"
-                aria-labelledby="register_modalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="register_modalLabel">Registro de Usuario</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-
-                      <!-- Formulario de Registro START-->
-                      <form action="back/registro.php" method="POST">
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="inputnombres">Nombres</label>
-                            <input type="text" class="form-control" name="names" id="inputnombres"
-                              placeholder="Digite sus nombres" <!--required-->>
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label for="inputapellidos">Apellidos</label>
-                            <input type="text" class="form-control" name="lastname" id="inputapellidos"
-                              placeholder="Digite sus Apellidos" <!--required-->>
-                          </div>
+            <!-- Modal de Registro-->
+            <div class="modal fade" id="register_modal" tabindex="-1" role="dialog"
+              aria-labelledby="register_modalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="register_modalLabel">Registro de Usuario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Formulario de Registro START-->
+                    <form action="" method="POST">
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputnombres">Nombres</label>
+                          <input type="text" class="form-control" name="names" id="inputnombres"
+                            placeholder="Digite sus nombres" <!--required-->>
                         </div>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="inputfecha_nacimiento">Fecha de Nacimiento</label>
-                            <input type="date" class="form-control" name="birth" id="inputfecha_nacimiento" <!--required-->>
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label for="inputnumero_id">Número de Identificación (Usuario)</label>
-                            <input type="text" class="form-control" name="id_person" id="inputnumero_id" <!--required-->>
-                          </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputapellidos">Apellidos</label>
+                          <input type="text" class="form-control" name="lastname" id="inputapellidos"
+                            placeholder="Digite sus Apellidos" <!--required-->>
                         </div>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="inputemail">Correo Electrónico</label>
-                            <input type="email" class="form-control" name="email" id="inputemail" <!--required-->>
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label for="inputcontra">Contraseña</label>
-                            <input type="password" class="form-control" name="pass" id="inputcontra" <!--required-->>
-                          </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputfecha_nacimiento">Fecha de Nacimiento</label>
+                          <input type="date" class="form-control" name="birth" id="inputfecha_nacimiento"
+                            <!--required-->>
                         </div>
-                        <button name="register_btn" type="submit" class="btn_login">Registrarse</button>
-                        <button type="reset" class="btn_register">Limpiar</button>
-                      </form>
-                      <!-- Formulario de Registro END--> ...
-                    </div>
-
+                        <div class="form-group col-md-6">
+                          <label for="inputnumero_id">Número de Identificación (Usuario)</label>
+                          <input type="text" class="form-control" name="id_person" id="inputnumero_id" <!--required-->>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputemail">Correo Electrónico</label>
+                          <input type="email" class="form-control" name="email" id="inputemail" <!--required-->>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputcontra">Contraseña</label>
+                          <input type="password" class="form-control" name="pass" id="inputcontra" <!--required-->>
+                        </div>
+                      </div>
+                      <button name="register_btn" type="submit" class="btn_login">Registrarse</button>
+                      <button type="reset" class="btn_register">Limpiar</button>
+                    </form>
+                    <!-- Formulario de Registro END--> ...
                   </div>
                 </div>
               </div>
+            </div>
 
-
-            </section>
           </section>
-
-
-
-
-
-
-
-  </header>
-
-
-
-
+        </section>
 
 </body>
 
