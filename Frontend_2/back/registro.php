@@ -1,4 +1,6 @@
 <?php
-echo "HOla Mundo Domingo";
+// echo "Hola Mundo Domingo123456";
+
+// echo $_POST[('names')];
 
 ?>
