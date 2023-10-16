@@ -14,18 +14,18 @@ class headermain extends HTMLElement{
                 <li id="dropdown" class="dropdown">
                     <a class="dropbtn" href="fun.html">Fun</a>
                     <div class="dropdown-content">
-                        <a href="Hmtl_pages/proyecto001.html">Showcase</a>
-                        <a href="Hmtl_pages/proyecto002.html">lighting and decoration</a>
-                        <a href="Hmtl_pages/proyecto003.html">Furnishing 1</a>
-                        <a href="Hmtl_pages/proyecto004.html">Furnishing 2</a>
-                        <a href="Hmtl_pages/proyecto005.html">Mobile POS 01</a>
-                        <a href="Hmtl_pages/proyecto006.html">Special projects 1</a>
-                        <a href="Hmtl_pages/proyecto007.html">Furnishing 3</a>
-                        <a href="Hmtl_pages/proyecto008.html">Mobile POS 2</a>
-                        <a href="Hmtl_pages/proyecto009.html">Comercial Stores</a>
-                        <a href="Hmtl_pages/proyecto010.html">Mobile Exhibitions</a>
-                        <a href="Hmtl_pages/proyecto011.html">Furnishing 4</a>
-                        <a href="Hmtl_pages/proyecto012.html">Special projects 2</a>
+                        <a href="proyecto001.html">Showcase</a>
+                        <a href="proyecto002.html">lighting and decoration</a>
+                        <a href="proyecto003.html">Furnishing 1</a>
+                        <a href="proyecto004.html">Furnishing 2</a>
+                        <a href="proyecto005.html">Mobile POS 01</a>
+                        <a href="proyecto006.html">Special projects 1</a>
+                        <a href="proyecto007.html">Furnishing 3</a>
+                        <a href="proyecto008.html">Mobile POS 2</a>
+                        <a href="proyecto009.html">Comercial Stores</a>
+                        <a href="proyecto010.html">Mobile Exhibitions</a>
+                        <a href="proyecto011.html">Furnishing 4</a>
+                        <a href="proyecto012.html">Special projects 2</a>
 
                     </div>                    
                 </li>
